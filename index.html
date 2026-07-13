@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>사지 말고 입양하세요 | 유기견 보호 캠페인</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;500;700&display=swap" rel="stylesheet">
+    
+    <style>
+        /* 1. CSS 스타일링 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+
+        body {
+            background-color: #fcf9f5;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* 헤더/히어로 섹션 (리트리버.jpg 사진 적용 부분) */
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+                        url('리트리버.jpg') no-repeat center center/cover;
+            height: 60vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: #fff;
+            padding: 20px;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+            font-weight: 700;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.6);
+        }
+
+        /* 메인 콘텐츠 섹션 */
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .campaign-intro {
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            margin-bottom: 40px;
+        }
+
+        .campaign-intro h2 {
+            color: #d97736;
+            margin-bottom: 20px;
+            font-size: 1.8rem;
+        }
+
+        .campaign-intro p {
+            font-size: 1.05rem;
+            color: #555;
+            margin-bottom: 15px;
+        }
+
+        /* 버튼 스타일 */
+        .btn-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+        }
+
+        /* 외부 링크 버튼 (보호센터 연결) */
+        .link-btn {
+            display: inline-block;
+            background-color: #d97736;
+            color: #fff;
+            padding: 15px 40px;
+            font-size: 1.2rem;
+            font-weight: 700;
+            text-decoration: none;
+            border-radius: 30px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 10px rgba(217, 119, 54, 0.3);
+        }
+
+        .link-btn:hover {
+            background-color: #b85c21;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 15px rgba(217, 119, 54, 0.4);
+        }
+
+        /* 자바스크립트 연동 응원 버튼 */
+        .cheer-btn {
+            background-color: #f1ebd9;
+            color: #705a4f;
+            border: none;
+            padding: 10px 25px;
+            font-size: 1rem;
+            font-weight: 500;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+
+        .cheer-btn:hover {
+            background-color: #e2d7be;
+        }
+
+        .count-text {
+            margin-top: 5px;
+            font-size: 0.9rem;
+            color: #888;
+        }
+
+        /* 푸터 */
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9rem;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="hero">
+        <h1>사지 말고 입양하세요</h1>
+        <p>따뜻한 손길을 기다리는 유기견들에게 가족이 되어주세요.</p>
+    </header>
+
+    <main class="container">
+        <section class="campaign-intro">
+            <h2>우리의 작은 관심이 아이들의 내일을 바꿉니다</h2>
+            <p>매년 수많은 아이들이 길거리나 보호소에서 외로운 시간을 보내고 있습니다.</p>
+            <p>상처받은 아이들의 마음을 보듬어주고, 평생을 함께할 소중한 가족을 찾아주는 일에 동참해주세요.</p>
+            <p>아래 버튼을 클릭하시면 유기견 보호 및 입양을 진행하는 보호소 페이지로 연결됩니다.</p>
+        </section>
+
+        <div class="btn-container">
+            <a href="https://dmanimal.co.kr/?ACE_REF=adwords_g&ACE_KW=%EC%9C%A0%EA%B8%B0%EA%B2%AC%EB%B3%B4%ED%98%B8&gad_source=1&gad_campaignid=19397380079&gbraid=0AAAAAC8irjfeo6HeJQ_KOh4kXcZLhKbMw&gclid=CjwKCAjwmdLSBhANEiwAkREMN7FbKDKKfcXhEZe6atZuXR0j5q8rsdrmMm7n2pTsYMUfPUK470hOnRoCKU0QAvD_BwE" 
+               target="_blank" 
+               class="link-btn">
+               🐾 유기견 보호센터 방문하기
+            </a>
+
+            <button class="cheer-btn" onclick="cheerUp()">❤️ 캠페인 응원하기</button>
+            <p class="count-text">지금까지 <span id="count" style="font-weight: bold; color: #d97736;">0</span>명이 응원했습니다.</p>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 유기견 보호 캠페인. 모든 개의 행복을 응원합니다.</p>
+    </footer>
+
+    <script>
+        let count = 0;
+        function cheerUp() {
+            count++;
+            document.getElementById('count').innerText = count;
+            alert('따뜻한 응원 감사합니다! 아이들에게 큰 힘이 됩니다. 🐶');
+        }
+    </script>
+</body>
+</html>
